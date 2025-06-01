@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>matcha filter</title>
+    <meta name="description" content="Add a matcha filter to your photos" />
+    <meta name="author" content="matcha filter" />
+
+    <meta property="og:title" content="Matcha Filter" />
+    <meta property="og:description" content="Add a matcha filter to your photos" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:image" content="" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- SVG filters for hand-drawn effect -->
+    <svg class="hidden-filter">
+      <defs>
+        <filter id="rough">
+          <feTurbulence baseFrequency="0.04" numOctaves="3" result="noise" seed="1"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="1"/>
+        </filter>
+      </defs>
+    </svg>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
