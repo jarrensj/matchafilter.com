@@ -13,7 +13,7 @@ const Header = () => {
               <Camera className="w-8 h-8 text-charcoal-600 hand-drawn" strokeWidth={1.5} />
             </div>
             <div>
-              <h1 className="text-xl font-noto font-medium text-charcoal-800">Matcha Filter</h1>
+              <h1 className="text-xl font-noto font-medium text-charcoal-800">matcha photos</h1>
               <p className="text-xs text-charcoal-500 -mt-1">matcha everything</p>
             </div>
           </div>
