@@ -13,7 +13,7 @@ const Newsletter = () => {
             Loved by matcha lovers
           </h3>
           <p className="text-charcoal-600 max-w-2xl mx-auto mb-8">
-             Leave a review! Tag us on instagram or tag #matchafilter
+             Leave a review! Tag us on instagram @matchaphotos or tag #matchaphotos
           </p>          
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <div className="bg-white/60 rounded-2xl p-6">
