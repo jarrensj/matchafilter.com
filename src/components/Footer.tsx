@@ -40,7 +40,7 @@ const Footer = () => {
                   Coming soon
                 </span>
               </a>
-              <a href="#" className="block text-sm text-charcoal-600 hover:text-charcoal-800 transition-colors">
+              <a href="mailto:contact@mathfolder.com" className="block text-sm text-charcoal-600 hover:text-charcoal-800 transition-colors">
                 Contact
               </a>
             </div>

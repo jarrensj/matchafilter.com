@@ -31,4 +31,4 @@ You are responsible for reviewing this page periodically. Continued use of the A
 
 ## Contact
 
-If you have questions about these terms, please contact: [contact@mathfolder.com]
+If you have questions about these terms, please contact: [contact@mathfolder.com](contact@mathfolder.com)

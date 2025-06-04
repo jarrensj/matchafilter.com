@@ -32,4 +32,4 @@ We encourage you to review this page periodically for any updates.
 
 ## Contact
 
-If you have any questions about this privacy policy, please contact: [contact@mathfolder.com]
+If you have any questions about this privacy policy, please contact: (contact@mathfolder.com)[contact@mathfolder.com]
