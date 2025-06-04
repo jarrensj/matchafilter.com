@@ -31,7 +31,7 @@ const ArticleGrid = () => {
             Why our friends love our app
           </h2>
           <p className="text-charcoal-600 max-w-2xl mx-auto">
-            Designed to just transform your photos into matcha photos. By a matcha lover, for matcha lovers.
+            Designed to just transform your photos into matcha photos. By a matcha lover, for matcha lovers. We&apos;re working on adding more filters and features!
           </p>
         </div>
         
