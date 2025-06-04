@@ -20,11 +20,25 @@ const Footer = () => {
           <div className="md:col-span-1">
             <h4 className="font-noto font-medium text-charcoal-800 mb-4">Matcha Filter</h4>
             <div className="space-y-2">
-              <a href="#" className="block text-sm text-charcoal-600 hover:text-charcoal-800 transition-colors">
+              <a 
+                href="#" 
+                className="block text-sm text-charcoal-600 hover:text-charcoal-800 transition-colors relative group cursor-default"
+                onClick={(e) => e.preventDefault()}
+              >
                 Photo Gallery
+                <span className="absolute left-0 -top-5 bg-charcoal-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10 pointer-events-none">
+                  Coming soon
+                </span>
               </a>
-              <a href="#" className="block text-sm text-charcoal-600 hover:text-charcoal-800 transition-colors">
+              <a 
+                href="#" 
+                className="block text-sm text-charcoal-600 hover:text-charcoal-800 transition-colors relative group cursor-default"
+                onClick={(e) => e.preventDefault()}
+              >
                 Development Blog
+                <span className="absolute left-0 -top-5 bg-charcoal-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10 pointer-events-none">
+                  Coming soon
+                </span>
               </a>
               <a href="#" className="block text-sm text-charcoal-600 hover:text-charcoal-800 transition-colors">
                 Contact
