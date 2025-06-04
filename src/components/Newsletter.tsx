@@ -1,11 +1,10 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Mail, Star } from "lucide-react";
 
 const Newsletter = () => {
   return (
-    <section className="py-16 px-6 bg-white/20">
+    <section id="reviews" className="py-16 px-6 bg-white/20 scroll-mt-32">
       <div className="max-w-4xl mx-auto">
         {/* Testimonials */}
         <div className="text-center mb-12">
