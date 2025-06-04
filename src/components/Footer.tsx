@@ -70,7 +70,7 @@ const Footer = () => {
         
         <div className="border-t border-charcoal-200 mt-8 pt-6 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-xs text-charcoal-500 mb-2 sm:mb-0">
-            © 2025 matcha filter. code by kwaji.
+            matcha photos. code by kwaji.
           </p>
           <div className="flex items-center space-x-1 text-xs text-charcoal-500">
             <span>Made with</span>
