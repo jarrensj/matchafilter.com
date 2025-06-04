@@ -1,5 +1,5 @@
 
-import { Camera, Menu, Smartphone } from "lucide-react";
+import { Film, Menu, Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -10,7 +10,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <div className="relative">
-              <Camera className="w-8 h-8 text-charcoal-600 hand-drawn" strokeWidth={1.5} />
+              <Film className="w-8 h-8 text-charcoal-600 hand-drawn" strokeWidth={1.5} />
             </div>
             <div>
               <h1 className="text-xl font-noto font-medium text-charcoal-800">matcha photos</h1>

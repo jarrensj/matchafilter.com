@@ -1,4 +1,4 @@
-import { Heart, Leaf } from "lucide-react";
+import { Heart, Film } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <Leaf className="w-6 h-6 text-charcoal-600" strokeWidth={1.5} />
+              <Film className="w-6 h-6 text-charcoal-600" strokeWidth={1.5} />
               <span className="font-noto font-medium text-charcoal-800">matcha photos</span>
             </div>
             <p className="text-sm text-charcoal-600 leading-relaxed">
