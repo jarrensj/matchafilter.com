@@ -1,8 +1,38 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Mail, Star } from "lucide-react";
+import { useState } from "react";
+import { supabase } from "@/lib/supabase";
+import { toast } from "sonner";
 
 const Newsletter = () => {
+  const [email, setEmail] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    try {
+      const { error } = await supabase
+        .from('mailinglist')
+        .insert([{ email }]);
+
+      if (error) {
+        console.error('Supabase error:', error);
+        throw error;
+      }
+
+      toast.success("Thanks for subscribing!");
+      setEmail("");
+    } catch (error: any) {
+      console.error('Error details:', error);
+      toast.error(error.message || "Something went wrong. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <section id="reviews" className="py-16 px-6 bg-white/20 scroll-mt-32">
       <div className="max-w-4xl mx-auto">
@@ -53,16 +83,23 @@ const Newsletter = () => {
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <Input
               type="email"
               placeholder="type your email here"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
               className="flex-1 bg-white/60 border-charcoal-200 text-charcoal-700 placeholder:text-charcoal-400 focus:border-charcoal-400 rounded-md"
             />
-            <Button className="bg-charcoal-700 hover:bg-charcoal-800 text-matcha-cream font-zen text-sm px-6">
-              Sign up
+            <Button 
+              type="submit"
+              disabled={isLoading}
+              className="bg-charcoal-700 hover:bg-charcoal-800 text-matcha-cream font-zen text-sm px-6"
+            >
+              {isLoading ? "Signing up..." : "Sign up"}
             </Button>
-          </div>
+          </form>
           
           <p className="text-xs text-charcoal-500 mt-3">
             I'm coding but it's just me • Unsubscribe anytime
