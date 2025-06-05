@@ -1,4 +1,3 @@
-
 import { Film, Menu, Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -35,10 +34,14 @@ const Header = () => {
           <div className="flex items-center space-x-3">
             <Button 
               size="sm" 
-              className="bg-charcoal-700 hover:bg-charcoal-800 text-matcha-cream font-zen text-sm px-4 hidden sm:flex"
+              className="bg-charcoal-700 hover:bg-charcoal-800 text-matcha-cream font-zen text-sm px-4 hidden sm:flex relative group cursor-default"
+              onClick={(e) => e.preventDefault()}
             >
               <Smartphone className="w-4 h-4 mr-2" />
               Download
+              <span className="absolute left-1/2 -translate-x-1/2 -top-8 bg-charcoal-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10 pointer-events-none">
+                Coming soon
+              </span>
             </Button>
             <Button variant="ghost" size="sm" className="p-2 md:hidden hover:bg-charcoal-100">
               <Menu className="w-4 h-4 text-charcoal-600" strokeWidth={1.5} />

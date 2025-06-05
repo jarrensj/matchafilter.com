@@ -42,11 +42,16 @@ const Hero = () => {
                   {/* App interface */}
                   <div className="absolute inset-6 top-16 bg-white rounded-3xl shadow-lg overflow-hidden">
                     {/* Sample photo with matcha filter */}
-                    <div className="w-full h-80 bg-gradient-to-br from-sage-100 via-matcha-100 to-sage-200 relative">
+                    <div className="w-full h-80 bg-gradient-to-br from-sage-100 via-matcha-100 to-sage-200 relative group">
                       <img 
-                        src=""
+                        src="edited.png"
                         alt="Photo with matcha filter"
-                        className="w-full h-full object-cover opacity-90"
+                        className="w-full h-full object-cover opacity-90 group-hover:opacity-0 transition-opacity duration-300"
+                      />
+                      <img 
+                        src="unedited.png"
+                        alt="Original photo"
+                        className="w-full h-full object-cover opacity-0 group-hover:opacity-90 transition-opacity duration-300 absolute inset-0"
                       />
                       <div className="absolute inset-0 bg-gradient-to-b from-sage-100/20 to-sage-300/30 mix-blend-overlay"></div>
                     </div>
@@ -55,8 +60,11 @@ const Hero = () => {
                     <div className="p-6 space-y-4">
                       <div className="flex items-center justify-between">
                         <div className="text-sm font-medium text-charcoal-800">Standard Matcha</div>
-                        <div title="Coming soon!">
+                        <div className="relative group">
                           <Camera className="w-5 h-5 text-sage-400 hand-drawn" strokeWidth={1} />
+                          <span className="absolute left-1/2 -translate-x-1/2 -top-8 bg-charcoal-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10 pointer-events-none">
+                            Coming soon
+                          </span>
                         </div>
                       </div>
                       

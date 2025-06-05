@@ -1,24 +1,24 @@
 
-import { Cherry, Mountain, Wind, Image, Film, Coffee } from "lucide-react";
+import { Mountain, Film, Coffee } from "lucide-react";
 
 const features = [
   {
     icon: Coffee,
     title: "Matcha Filters",
     description: "Filters inspired [and fueled] by matcha lattes. By a matcha lover, for matcha lovers.",
-    image: ""
+    image: "bash_matcha.jpg"
   },
   {
     icon: Mountain,
     title: "Clean and Focused",
     description: "Clean, intuitive interface focused on applying the matcha filter. No clutter, no forced watermark, just matcha image processing done locally on your device.",
-    image: ""
+    image: "bash_matcha.jpg"
   },
   {
     icon: Film,
     title: "Matcha Everything",
     description: "Transform any moment, photo of you, or your food photo with a matcha filter. Perfect for matcha lovers.",
-    image: ""
+    image: "kilo_matcha.png"
   }
 ];
 
@@ -42,7 +42,7 @@ const ArticleGrid = () => {
                 {/* Feature image */}
                 <div className="aspect-[4/3] bg-matcha-100 rounded-xl mb-6 overflow-hidden">
                   <img 
-                    src={`https://images.unsplash.com/${feature.image}?w=400&h=300&fit=crop&auto=format`}
+                    src={feature.image}
                     alt={feature.title}
                     className="w-full h-full object-cover opacity-80 group-hover:opacity-90 transition-opacity"
                   />
