@@ -102,7 +102,7 @@ const Newsletter = () => {
           </form>
           
           <p className="text-xs text-charcoal-500 mt-3">
-            I'm coding but it's just me • Unsubscribe anytime
+             Contact us at <a href="mailto:contact@mathfolder.com" className="text-charcoal-500 hover:text-charcoal-800 transition-colors">contact@mathfolder.com</a> to unsubscribe anytime
           </p>
         </div>
       </div>
