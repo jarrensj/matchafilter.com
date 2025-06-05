@@ -42,7 +42,7 @@ const Newsletter = () => {
             Loved by matcha lovers
           </h3>
           <p className="text-charcoal-600 max-w-2xl mx-auto mb-8">
-             Leave a review! Tag us on instagram <a className="text-sage-400 hover:text-charcoal-800 transition-colors" href="https://www.instagram.com/matchaphotos">@matchaphotos</a> or tag #matchaphotos
+             Leave a review! Tag us on instagram <a className="text-sage-400 hover:text-charcoal-800 transition-colors" href="https://www.instagram.com/matchaphotos">@matchaphotos</a> or tag #matchafilter
           </p>          
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <div className="bg-white/60 rounded-2xl p-6">
