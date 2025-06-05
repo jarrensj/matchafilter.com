@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
               <Film className="w-6 h-6 text-charcoal-600" strokeWidth={1.5} />
-              <span className="font-noto font-medium text-charcoal-800">matcha photos</span>
+              <span className="font-noto font-medium text-charcoal-800">matcha filter</span>
             </div>
             <p className="text-sm text-charcoal-600 leading-relaxed">
               apply a matcha filter to your photo
