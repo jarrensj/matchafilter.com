@@ -1,6 +1,6 @@
 # Terms & Conditions
 
-_Last updated: June 4, 2025_
+_Last updated: June 5, 2025_
 
 By using this app ("the App"), you agree to the following terms. If you do not agree, please do not use the App.
 
@@ -31,4 +31,4 @@ You are responsible for reviewing this page periodically. Continued use of the A
 
 ## Contact
 
-If you have questions about these terms, please contact: [contact@mathfolder.com](contact@mathfolder.com)
+If you have questions about these terms, please contact: [contact@mathfolder.com](mail to:contact@mathfolder.com)

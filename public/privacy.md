@@ -1,6 +1,6 @@
 # Privacy Policy
 
-_Last updated: June 4, 2025_
+_Last updated: June 5, 2025_
 
 This app ("the App") does **not collect, store, or share any personal information**.
 
@@ -32,4 +32,4 @@ We encourage you to review this page periodically for any updates.
 
 ## Contact
 
-If you have any questions about this privacy policy, please contact: (contact@mathfolder.com)[contact@mathfolder.com]
+If you have any questions about this privacy policy, please contact: [contact@mathfolder.com](mailto:contact@mathfolder.com)
