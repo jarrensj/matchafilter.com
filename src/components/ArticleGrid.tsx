@@ -1,4 +1,3 @@
-
 import { Mountain, Film, Coffee } from "lucide-react";
 
 const features = [
@@ -6,19 +5,22 @@ const features = [
     icon: Coffee,
     title: "Matcha Filters",
     description: "Filters inspired [and fueled] by matcha lattes. By a matcha lover, for matcha lovers.",
-    image: "bash_matcha.jpg"
+    image: "kwaji_matcha.png",
+    unedited: "kwaji.jpg"
   },
   {
     icon: Mountain,
     title: "Clean and Focused",
     description: "Clean, intuitive interface focused on applying the matcha filter. No clutter, no forced watermark, just matcha image processing done locally on your device.",
-    image: "bash_matcha.jpg"
+    image: "bash_matcha.jpg",
+    unedited: "bash.jpg"
   },
   {
     icon: Film,
     title: "Matcha Everything",
     description: "Transform any moment, photo of you, or your food photo with a matcha filter. Perfect for matcha lovers.",
-    image: "kilo_matcha.png"
+    image: "kilo_matcha.png",
+    unedited: "kilo.png"
   }
 ];
 
@@ -40,11 +42,16 @@ const ArticleGrid = () => {
             <div key={index} className="group">
               <div className="bg-white/40 rounded-2xl p-6 h-full hover:bg-white/60 transition-all duration-300 border border-charcoal-100">
                 {/* Feature image */}
-                <div className="aspect-[4/3] bg-matcha-100 rounded-xl mb-6 overflow-hidden">
+                <div className="aspect-[4/3] bg-matcha-100 rounded-xl mb-6 overflow-hidden relative">
                   <img 
                     src={feature.image}
                     alt={feature.title}
-                    className="w-full h-full object-cover opacity-80 group-hover:opacity-90 transition-opacity"
+                    className="w-full h-full object-cover opacity-80 group-hover:opacity-0 transition-opacity duration-300 absolute inset-0"
+                  />
+                  <img 
+                    src={feature.unedited}
+                    alt={`Original ${feature.title}`}
+                    className="w-full h-full object-cover opacity-0 group-hover:opacity-80 transition-opacity duration-300"
                   />
                 </div>
                 
