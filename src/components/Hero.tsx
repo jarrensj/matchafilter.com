@@ -44,12 +44,12 @@ const Hero = () => {
                     {/* Sample photo with matcha filter */}
                     <div className="w-full h-80 bg-gradient-to-br from-sage-100 via-matcha-100 to-sage-200 relative group">
                       <img 
-                        src="edited.png"
+                        src="image3.png"
                         alt="Photo with matcha filter"
                         className="w-full h-full object-cover opacity-90 group-hover:opacity-0 transition-opacity duration-300"
                       />
                       <img 
-                        src="unedited.png"
+                        src="image.png"
                         alt="Original photo"
                         className="w-full h-full object-cover opacity-0 group-hover:opacity-90 transition-opacity duration-300 absolute inset-0"
                       />
@@ -59,7 +59,7 @@ const Hero = () => {
                     {/* Filter controls */}
                     <div className="p-6 space-y-4">
                       <div className="flex items-center justify-between">
-                        <div className="text-sm font-medium text-charcoal-800">Standard Matcha</div>
+                        <div className="text-sm font-medium text-charcoal-800">Matcha Filter</div>
                         <div className="relative group">
                           <Camera className="w-5 h-5 text-sage-400 hand-drawn" strokeWidth={1} />
                           <span className="absolute left-1/2 -translate-x-1/2 -top-8 bg-charcoal-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10 pointer-events-none">
@@ -71,8 +71,18 @@ const Hero = () => {
                       {/* Filter options */}
                       <div className="flex space-x-3 mt-4">
                         <div className="w-12 h-12 bg-sage-200 rounded-xl border-2 border-sage-400"></div>
-                        <div className="w-12 h-12 bg-matcha-100 rounded-xl border border-charcoal-200"></div>
-                        <div className="w-12 h-12 bg-sage-100 rounded-xl border border-charcoal-200"></div>
+                        <div className="relative group">
+                          <div className="w-12 h-12 bg-matcha-100 rounded-xl border border-charcoal-200"></div>
+                          <span className="absolute left-1/2 -translate-x-1/2 -top-8 bg-charcoal-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10 pointer-events-none">
+                            Try in the app
+                          </span>
+                        </div>
+                        <div className="relative group">
+                          <div className="w-12 h-12 bg-sage-100 rounded-xl border border-charcoal-200"></div>
+                          <span className="absolute left-1/2 -translate-x-1/2 -top-8 bg-charcoal-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10 pointer-events-none">
+                            Try in the app
+                          </span>
+                        </div>
                       </div>
                       </div>
                   </div>

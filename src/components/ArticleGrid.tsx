@@ -45,12 +45,12 @@ const ArticleGrid = () => {
                 <div className="aspect-[4/3] bg-matcha-100 rounded-xl mb-6 overflow-hidden relative">
                   <img 
                     src={feature.image}
-                    alt={feature.title}
+                    alt={feature.image}
                     className="w-full h-full object-cover opacity-80 group-hover:opacity-0 transition-opacity duration-300 absolute inset-0"
                   />
                   <img 
                     src={feature.unedited}
-                    alt={`Original ${feature.title}`}
+                    alt={`unedited ${feature.image}`}
                     className="w-full h-full object-cover opacity-0 group-hover:opacity-80 transition-opacity duration-300"
                   />
                 </div>
