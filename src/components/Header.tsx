@@ -25,9 +25,9 @@ const Header = () => {
             <a href="#reviews" className="text-charcoal-600 hover:text-charcoal-800 transition-colors font-zen text-sm">
               Reviews
             </a>
-            <a href="#about" className="text-charcoal-600 hover:text-charcoal-800 transition-colors font-zen text-sm">
+            {/* <a href="#about" className="text-charcoal-600 hover:text-charcoal-800 transition-colors font-zen text-sm">
               About
-            </a>
+            </a> */}
           </nav>
 
           {/* Download button */}
