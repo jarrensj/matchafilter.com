@@ -40,9 +40,9 @@ const Hero = () => {
                   </div>
                   
                   {/* App interface */}
-                  <div className="absolute inset-6 top-16 bg-white rounded-3xl shadow-lg overflow-hidden">
+                  <div className="absolute inset-6 top-16 bg-white rounded-3xl shadow-lg">
                     {/* Sample photo with matcha filter */}
-                    <div className="w-full h-80 bg-gradient-to-br from-sage-100 via-matcha-100 to-sage-200 relative group">
+                    <div className="w-full h-80 bg-gradient-to-br from-sage-100 via-matcha-100 to-sage-200 relative group overflow-hidden">
                       <img 
                         src="image3.png"
                         alt="Photo with matcha filter"
@@ -60,7 +60,7 @@ const Hero = () => {
                     <div className="p-6 space-y-4">
                       <div className="flex items-center justify-between">
                         <div className="text-sm font-medium text-charcoal-800">Matcha Filter</div>
-                        <div className="relative group">
+                        <div className="relative group overflow-visible">
                           <Camera className="w-5 h-5 text-sage-400 hand-drawn" strokeWidth={1} />
                           <span className="absolute left-1/2 -translate-x-1/2 -top-8 bg-charcoal-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10 pointer-events-none">
                             Coming soon
