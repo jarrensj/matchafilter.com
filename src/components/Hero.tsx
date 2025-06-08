@@ -103,14 +103,13 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               size="lg" 
-              className="bg-charcoal-700 hover:bg-charcoal-800 text-matcha-cream font-zen text-lg px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 relative group cursor-default"
-              onClick={(e) => e.preventDefault()}
+              className="bg-charcoal-700 hover:bg-charcoal-800 text-matcha-cream font-zen text-lg px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+              asChild
             >
-              <Smartphone className="w-5 h-5 mr-2" />
-              Download for iPhone
-              <span className="absolute left-1/2 -translate-x-1/2 -top-8 bg-charcoal-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10 pointer-events-none">
-                Coming soon
-              </span>
+              <a href="https://apps.apple.com/us/app/matcha-filter/id6746893592" target="_blank" rel="noopener noreferrer">
+                <Smartphone className="w-5 h-5 mr-2" />
+                Download for iPhone
+              </a>
             </Button>
             <Button 
               size="lg" 
