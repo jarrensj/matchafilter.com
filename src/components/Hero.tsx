@@ -42,7 +42,7 @@ const Hero = () => {
                   {/* App interface */}
                   <div className="absolute inset-6 top-16 bg-white rounded-3xl shadow-lg">
                     {/* Sample photo with matcha filter */}
-                    <div className="w-full h-80 bg-gradient-to-br from-sage-100 via-matcha-100 to-sage-200 relative group overflow-hidden">
+                    <div className="w-full h-80 bg-gradient-to-br from-sage-100 via-matcha-100 to-sage-200 relative group overflow-hidden rounded-t-3xl">
                       <img 
                         src="image3.png"
                         alt="Photo with matcha filter"
